@@ -1,0 +1,6 @@
+[submodule "forgottenserver"]
+	path = forgottenserver
+	url = https://github.com/otland/forgottenserver.git
+[submodule "otclient"]
+	path = otclient
+	url = https://github.com/edubart/otclient.git
