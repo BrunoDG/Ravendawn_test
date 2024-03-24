@@ -4,13 +4,13 @@
 
 --function do_sth_with_PlayerParty(playerId, membername)
 function leavePlayerParty(playerId, membername)
-    player = Player(playerId)
+    local player = Player(playerId)
     local party = player:getParty()
 
     for k,v in pairs(party:getMembers()) do 
         if v == Player(membername) then 
             --party:removeMember(Player(membername))
-            party:removeMember(k) -- instead of removing the PlauerName, remove the key from the pair itself.
+            party:removeMember(k) -- instead of removing the PlayerName, remove the key from the pair itself.
         end
     end
 end
