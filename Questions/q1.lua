@@ -4,7 +4,6 @@ local STORAGE_VALUE = 1000
 
 local function releaseStorage(player)
     local RESET_VALUE = -1
-    
     player:setStorageValue(STORAGE_VALUE, RESET_VALUE)
 end
 

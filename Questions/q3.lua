@@ -7,10 +7,6 @@ function leavePlayerParty(playerId, membername)
     local player = Player(playerId)
     local party = player:getParty()
 
-    for k,v in pairs(party:getMembers()) do 
-        if v == Player(membername) then 
-            --party:removeMember(Player(membername))
-            party:removeMember(v) -- instead of removing the PlayerName, remove the key from the pair itself.
-        end
-    end
+    party:removeMember(Player(membername))
+    -- If player is inside hte party, remove it without the need to use that for loop.
 end
