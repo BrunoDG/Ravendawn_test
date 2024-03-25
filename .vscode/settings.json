@@ -22,5 +22,6 @@
     "Lua.diagnostics.globals": [
         "addEvent",
         "AddEvent"
-    ]
+    ],
+    "C_Cpp.errorSquiggles": "disabled"
 }

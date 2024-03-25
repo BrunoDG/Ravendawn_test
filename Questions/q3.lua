@@ -10,7 +10,7 @@ function leavePlayerParty(playerId, membername)
     for k,v in pairs(party:getMembers()) do 
         if v == Player(membername) then 
             --party:removeMember(Player(membername))
-            party:removeMember(k) -- instead of removing the PlayerName, remove the key from the pair itself.
+            party:removeMember(v) -- instead of removing the PlayerName, remove the key from the pair itself.
         end
     end
 end
